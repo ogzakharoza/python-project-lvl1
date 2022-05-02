@@ -4,10 +4,10 @@ version = "0.1.0"
 description = ""
 authors = ["Zakhar Chaichenko <chaichenko.98@mail.ru>"]
 
-packages = [ { include = "brain_games" }, { include = 'cly' }, ]
+packages = [ { include = "brain_games" }, ]
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+brain-games = "brain_games.scripts.Brain_games:main"
 
 [tool.poetry.dependencies]
 python = "^3.8"
