@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from random import randint
 from brain_games.cli import welcome_user
 from brain_games.mechanics import game
