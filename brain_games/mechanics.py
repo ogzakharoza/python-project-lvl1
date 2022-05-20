@@ -1,6 +1,7 @@
 import random
 from random import randint
 from random import choice
+from math import gcd
 def game():
     print('Answer "yes" if the number is even, otherwise answer "no"')
 
@@ -28,6 +29,23 @@ def calc():
         print(f'Question: {a} {x} {b} = ?')
         answ = int(input('Your answer: '))
         if answ == expression:
+            print('Correct')
+        else:
+            print("Let's try again")
+            return False
+    return True
+
+from math import gcd
+
+def game_gcd():
+    print('Find the greatest common divisor of given numbers.')
+    for i in range(3):
+        a = randint(1, 100)
+        b = randint(1, 100)
+        x = gcd(a, b)
+        print(f'Question: {a}, {b} = ?')
+        answ = int(input('Your answer: '))
+        if answ == x:
             print('Correct')
         else:
             print("Let's try again")
