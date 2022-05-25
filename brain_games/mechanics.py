@@ -1,7 +1,7 @@
 import random
 from random import randint
 from math import gcd
-
+from brain_games.prime import isPrime
 def welcome_user():
     
     name = input('May I have your name? ')
@@ -87,23 +87,16 @@ def game_progression():
 
 
 def brain_prime():
-    def isprime(n):
-        if n % 2 == 0:
-            return n == 2
-        d = 3
-        while d * d <= n and n % d != 0:
-            d += 2 
-        return d * d > n
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     for i in range(3):
         a = randint(1, 100)
-        print(f'Question: {a} = ?')
+        print(f'Question: {a}')
         answ = input('Your answer: ')
-        if isprime(a) and answ == 'yes':
+        if isPrime(a) and answ == 'yes':
             print('Correct!')
         elif answ == 'no':
             print('Correct!')
         else:
-            #print("Let's try again")
             return False
     return True
+
