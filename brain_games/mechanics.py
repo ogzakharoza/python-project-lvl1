@@ -75,7 +75,7 @@ def game_progression():
         index = randint(0, len(progr_list) - 1)
         q = progr_list[index]
         progr_list[index] = '..'
-        print(*progr_list)
+        print('Question:', *progr_list)
         answ = int(input('Your answer: '))
         if answ == q:
             print('Correct!')
