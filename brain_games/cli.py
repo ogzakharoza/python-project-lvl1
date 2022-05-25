@@ -1,6 +1,6 @@
 
 def welcome_user():
 
-    name = input('Enter your name: ')
+    name = input('May I have your name?')
 
     return name
