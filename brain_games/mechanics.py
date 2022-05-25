@@ -2,6 +2,12 @@ import random
 from random import randint
 from math import gcd
 
+def welcome_user():
+    
+    name = input('May I have your name? ')
+
+    return name
+
 
 def game():
 
@@ -16,7 +22,7 @@ def game():
         elif num % 2 != 0 and ask == 'no':
             print('Correct!')
         else:
-            print("Let's try again")
+            #print("Let's try again, {name}!")
             return False
     return True
 
@@ -35,7 +41,7 @@ def calc():
         if answ == expression:
             print('Correct')
         else:
-            print("Let's try again")
+            #print("Let's try again, {name}!")
             return False
     return True
 
@@ -52,7 +58,7 @@ def game_gcd():
         if answ == x:
             print('Correct')
         else:
-            print("Let's try again")
+            #print("Let's try again, {name}!")
             return False
     return True
 
@@ -75,7 +81,7 @@ def game_progression():
             print('Correct!')
         else:
             print(f'{answ} is wrong answer ;(. Correct answer was {q}')
-            print("Let's try again")
+            #print("Let's try again, {name}!")
             return False
     return True
 
@@ -98,6 +104,6 @@ def brain_prime():
         elif answ == 'no':
             print('Correct!')
         else:
-            print("Let's try again")
+            #print("Let's try again")
             return False
     return True
