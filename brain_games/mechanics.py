@@ -1,7 +1,6 @@
 import random
 from random import randint
 from math import gcd
-from sympy import isprime
 
 
 def game():
@@ -82,6 +81,13 @@ def game_progression():
 
 
 def brain_prime():
+    def isprime(n):
+        if n % 2 == 0:
+            return n == 2
+        d = 3
+        while d * d <= n and n % d != 0:
+            d += 2 
+        return d * d > n
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     for i in range(3):
         a = randint(1, 100)
