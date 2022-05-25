@@ -1,8 +1,11 @@
 import random
 from random import randint
-from random import choice
 from math import gcd
+from sympy import isprime
+
+
 def game():
+
     print('Answer "yes" if the number is even, otherwise answer "no"')
 
     for i in range(3):
@@ -18,14 +21,16 @@ def game():
             return False
     return True
 
+
 def calc():
-    print(f'What is the result of the expression?')
+
+    print('What is the result of the expression?')
     for i in range(3):
         a = randint(1, 50)
         b = randint(1, 30)
         operations = ['-', '+', '*']
         x = (random.choice(operations))
-        expression = eval(str(a)+ x + str(b))
+        expression = eval(str(a) + x + str(b))
         print(f'Question: {a} {x} {b} = ?')
         answ = int(input('Your answer: '))
         if answ == expression:
@@ -35,9 +40,9 @@ def calc():
             return False
     return True
 
-from math import gcd
 
 def game_gcd():
+
     print('Find the greatest common divisor of given numbers.')
     for i in range(3):
         a = randint(1, 100)
@@ -52,3 +57,41 @@ def game_gcd():
             return False
     return True
 
+
+def game_progression():
+    print('What number is missing in the progression?')
+    for i in range(3):
+        progr_list = []
+        a = randint(1, 100)
+        x = randint(1, 6)
+        b = a + 9 * x + 1
+        for i in range(a, b, x):
+            progr_list.append(i)
+        index = randint(0, len(progr_list) - 1)
+        q = progr_list[index]
+        progr_list[index] = '..'
+        print(*progr_list)
+        answ = int(input('Your answer: '))
+        if answ == q:
+            print('Correct!')
+        else:
+            print(f'{answ} is wrong answer ;(. Correct answer was {q}')
+            print("Let's try again")
+            return False
+    return True
+
+
+def brain_prime():
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    for i in range(3):
+        a = randint(1, 100)
+        print(f'Question: {a} = ?')
+        answ = input('Your answer: ')
+        if isprime(a) and answ == 'yes':
+            print('Correct!')
+        elif answ == 'no':
+            print('Correct!')
+        else:
+            print("Let's try again")
+            return False
+    return True

@@ -1,6 +1,5 @@
-#!/usr/bin/env python
 from brain_games.cli import welcome_user
-from brain_games.mechanics import game
+from brain_games.mechanics import game_progression
 
 
 def main():
@@ -9,11 +8,10 @@ def main():
 
     name = welcome_user()
     print(f'Hello, {name}')
-    ok = game()
+    ok = game_progression()
     if ok:
         print(f'Congratulations, {name}')
 
 
 if __name__ == '__main__':
-
     main()

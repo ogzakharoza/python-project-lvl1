@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-from random import randint
-from random import choice
 from brain_games.cli import welcome_user
 from brain_games.mechanics import calc
 
@@ -12,6 +10,7 @@ def main():
     ok = calc()
     if ok:
         print(f'Congratulations, {name}')
-        
+
+
 if __name__ == '__main__':
     main()
