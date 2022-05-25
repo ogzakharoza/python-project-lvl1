@@ -53,7 +53,7 @@ def game_gcd():
         a = randint(1, 100)
         b = randint(1, 100)
         x = gcd(a, b)
-        print(f'Question: {a}, {b} = ?')
+        print(f'Question: {a} {b}')
         answ = int(input('Your answer: '))
         if answ == x:
             print('Correct')
