@@ -10,8 +10,9 @@ def main():
     print(f'Hello, {name}')
     ok = game_progression()
     if ok:
-        print(f'Congratulations, {name}')
-
+        print(f'Congratulations, {name}!')
+    else:
+        print(f"Let's try again, {name}!")
 
 if __name__ == '__main__':
     main()
