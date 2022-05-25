@@ -11,7 +11,7 @@ def main():
     print(f'Hello, {name}')
     ok = game()
     if ok:
-        print(f'Congratulations, {name}')
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':
