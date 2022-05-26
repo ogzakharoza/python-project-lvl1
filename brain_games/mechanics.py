@@ -90,10 +90,10 @@ def brain_prime():
         n = randint(0, 100)
         print(f'Question: {n}')
         answ = input('Your answer: ')
-        if isPrime(n) == True and answ == 'yes':
+        if isPrime(n) and answ == 'yes':
             print('Correct!')
-        elif answ == 'no':
-            print('Correct!')
+        elif not isPrime(n) and answ == 'no':
+            print('Correct!') 
         else:
             return False
     return True
