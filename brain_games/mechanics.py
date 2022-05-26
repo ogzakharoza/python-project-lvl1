@@ -87,10 +87,10 @@ def game_progression():
 def brain_prime():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     for i in range(3):
-        a = randint(1, 100)
-        print(f'Question: {a}')
+        n = randint(0, 100)
+        print(f'Question: {n}')
         answ = input('Your answer: ')
-        if isPrime(a) and answ == 'yes':
+        if isPrime(n) == True and answ == 'yes':
             print('Correct!')
         elif answ == 'no':
             print('Correct!')
