@@ -93,7 +93,7 @@ def brain_prime():
         if isPrime(n) and answ == 'yes':
             print('Correct!')
         elif not isPrime(n) and answ == 'no':
-            print('Correct!') 
+            print('Correct!')
         else:
             return False
     return True
