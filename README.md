@@ -1,8 +1,9 @@
 There are some games made by OGZakharoza:
-1) brain-calculator: check how well you can add, subtract and multiply in your head)
-2) brain-gcd: find the least common divisible of two numbers
-3) brain progression: write the number that is missing in the progression
-4) brain-even: answer, even or odd number 
+1) brain-calculator: https://asciinema.org/a/Aydw4TsJdANRjycGevRd6hozL
+2) brain-gcd: https://asciinema.org/a/IlZGC11Wym0TiVztehEZSjrEu
+3) brain-progression: https://asciinema.org/connect/0a229c32-c44d-483f-81e0-27c18dc1f9c6
+4) brain-even: https://asciinema.org/connect/0a229c32-c44d-483f-81e0-27c18dc1f9c6
+5) brain-prime: https://asciinema.org/a/VrHJZx4DgiBgtMV08rbR5aHV1  
 To download my game go to my Github (https://github.com/ogzakharoza/python-project-lvl1), press 'clone' button and paste into your terminal.
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ogzakharoza/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ogzakharoza/python-project-lvl1/actions)
