@@ -96,8 +96,6 @@ def brain_prime():
             print('Correct!')
         elif n == 0 and answ == 'yes':
             return False
-        elif n == 1 and answ == 'yes':
-            return False
         else:
             return False
     return True
