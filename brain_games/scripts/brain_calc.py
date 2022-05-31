@@ -1,17 +1,10 @@
 #!/usr/bin/env python
-from brain_games.cli import welcome_user
-from brain_games.mechanics import calc
+from brain_games.mechanics import mechanics
+from brain_games.games import calc
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = welcome_user()
-    print(f'Hello, {name}')
-    ok = calc()
-    if ok:
-        print(f'Congratulations, {name}!')
-    else:
-        print(f"Let's try again, {name}!")
+    return mechanics(calc)
 
 
 if __name__ == '__main__':
