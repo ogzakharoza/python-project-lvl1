@@ -1,9 +1,9 @@
 There are some games made by OGZakharoza:
-1) brain-calculator: <script id="asciicast-Aydw4TsJdANRjycGevRd6hozL" src="https://asciinema.org/a/Aydw4TsJdANRjycGevRd6hozL.js" async></script>
-2) brain-gcd: <script id="asciicast-IlZGC11Wym0TiVztehEZSjrEu" src="https://asciinema.org/a/IlZGC11Wym0TiVztehEZSjrEu.js" async></script>
-3) brain-progression: <script id="asciicast-g2trsdFV0JNTE41PojCKCKOMq" src="https://asciinema.org/a/g2trsdFV0JNTE41PojCKCKOMq.js" async></script>
-4) brain-even: <script id="asciicast-Aydw4TsJdANRjycGevRd6hozL" src="https://asciinema.org/a/Aydw4TsJdANRjycGevRd6hozL.js" async></script>
-5) brain-prime: <script id="asciicast-VrHJZx4DgiBgtMV08rbR5aHV1" src="https://asciinema.org/a/VrHJZx4DgiBgtMV08rbR5aHV1.js" async></script>  
+1) brain-calculator:  
+2) brain-gcd: [![asciicast](https://asciinema.org/a/IlZGC11Wym0TiVztehEZSjrEu.svg)](https://asciinema.org/a/IlZGC11Wym0TiVztehEZSjrEu)
+3) brain-progression: [![asciicast](https://asciinema.org/a/VrHJZx4DgiBgtMV08rbR5aHV1.svg)](https://asciinema.org/a/VrHJZx4DgiBgtMV08rbR5aHV1)
+4) brain-even: [![asciicast](https://asciinema.org/a/KjlRNldxuzWRtV8Uy6A9LKDnk.svg)](https://asciinema.org/a/KjlRNldxuzWRtV8Uy6A9LKDnk)
+5) brain-prime:  [![asciicast](https://asciinema.org/a/VrHJZx4DgiBgtMV08rbR5aHV1.svg)](https://asciinema.org/a/VrHJZx4DgiBgtMV08rbR5aHV1)
 To download my game go to my Github (https://github.com/ogzakharoza/python-project-lvl1), press 'clone' button and paste into your terminal.
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ogzakharoza/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/ogzakharoza/python-project-lvl1/actions)
