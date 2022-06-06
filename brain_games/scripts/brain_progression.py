@@ -1,18 +1,11 @@
-from brain_games.cli import welcome_user
-from brain_games.mechanics import game_progression
+#!/usr/bin/env python
+from brain_games.mechanics import start
+from brain_games.games import progression
 
 
 def main():
 
-    print('Welcome to the Brain Games!')
-
-    name = welcome_user()
-    print(f'Hello, {name}')
-    ok = game_progression()
-    if ok:
-        print(f'Congratulations, {name}!')
-    else:
-        print(f"Let's try again, {name}!")
+    return start(progression)
 
 
 if __name__ == '__main__':

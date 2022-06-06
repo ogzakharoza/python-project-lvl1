@@ -1,17 +1,11 @@
 #!/usr/bin/env python
-from brain_games.cli import welcome_user
-from brain_games.mechanics import brain_prime
+from brain_games.mechanics import start
+from brain_games.games import prime
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = welcome_user()
-    print(f'Hello, {name}')
-    ok = brain_prime()
-    if ok:
-        print(f'Congratulations, {name}!')
-    else:
-        print(f"Let's try again, {name}!")
+
+    return start(prime)
 
 
 if __name__ == '__main__':

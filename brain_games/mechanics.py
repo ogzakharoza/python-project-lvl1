@@ -1,17 +1,21 @@
 import prompt
 
-def mechanics(game):
+
+def start(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
     print(game.condition)
     NUMBER_OF_ROUNDS = 3
     for _ in range(NUMBER_OF_ROUNDS):
-        game.question_and_answer()
-        print(f'Question:{game.question}')
+        right_answer = game.question_and_answer()
+        print(f'Question: {right_answer[0]}')
         answer = input('Your answer: ')
-        if str(game.right_answer) == player_answer:
+        if right_answer[1] == answer:
             print('Correct!')
         else:
-            return print(f"{answer} is wrong answer ;(. Correct answer was {right_answer}.\nLets' try agan, {name}")
-    print(f"Let's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;("
+                  f"Correct answer was '{right_answer[1]}'.")
+            print(f"Let's try again, {name}")
+            return False
+    print(f'Congratulations, {name}!')
