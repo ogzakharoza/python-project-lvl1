@@ -1,5 +1,5 @@
 There are some games made by OGZakharoza:
-1) brain-calculator:  
+1) brain-calculator:  [![asciicast](https://asciinema.org/a/FlTEAxHrkcCNBFv7DUELg5Cjg.svg)](https://asciinema.org/a/FlTEAxHrkcCNBFv7DUELg5Cjg)
 2) brain-gcd: [![asciicast](https://asciinema.org/a/IlZGC11Wym0TiVztehEZSjrEu.svg)](https://asciinema.org/a/IlZGC11Wym0TiVztehEZSjrEu)
 3) brain-progression: [![asciicast](https://asciinema.org/a/VrHJZx4DgiBgtMV08rbR5aHV1.svg)](https://asciinema.org/a/VrHJZx4DgiBgtMV08rbR5aHV1)
 4) brain-even: [![asciicast](https://asciinema.org/a/KjlRNldxuzWRtV8Uy6A9LKDnk.svg)](https://asciinema.org/a/KjlRNldxuzWRtV8Uy6A9LKDnk)
