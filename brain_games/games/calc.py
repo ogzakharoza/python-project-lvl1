@@ -4,12 +4,17 @@ from random import choice
 
 condition = 'What is the result of the expression?'
 
+OPERATIONS = ['-', '+', '*']
 
 def question_and_answer():
-    a = randint(1, 50)
-    b = randint(1, 30)
-    operations = ['-', '+', '*']
-    x = (choice(operations))
-    expression = f'{a} {x} {b}'
-    right_answer = str(eval(expression))
-    return (expression, right_answer)
+    A = randint(1, 100)
+    B = randint(1, 100)
+    X = choice(OPERATIONS)
+    expression = f'{A} {X} {B}'
+    if X == '-':
+        right_answer = A - B
+    elif X == '+':
+        right_answer = A + B
+    elif X == '*':
+        right_answer = A * B
+    return (expression, str(right_answer))
