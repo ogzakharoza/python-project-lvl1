@@ -6,15 +6,20 @@ condition = 'What is the result of the expression?'
 
 OPERATIONS = ['-', '+', '*']
 
+START = 1
+
+END = 100
+
+
 def question_and_answer():
-    A = randint(1, 100)
-    B = randint(1, 100)
-    X = choice(OPERATIONS)
-    expression = f'{A} {X} {B}'
-    if X == '-':
-        right_answer = A - B
-    elif X == '+':
-        right_answer = A + B
-    elif X == '*':
-        right_answer = A * B
+    a = randint(START, END)
+    b = randint(START, END)
+    x = choice(OPERATIONS)
+    expression = f'{a} {x} {b}'
+    if x == '-':
+        right_answer = a - b
+    elif x == '+':
+        right_answer = a + b
+    elif x == '*':
+        right_answer = a * b
     return (expression, str(right_answer))
