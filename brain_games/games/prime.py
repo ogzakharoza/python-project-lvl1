@@ -1,6 +1,6 @@
 from random import randint
 
-condition = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 START = 1
 END = 100
 

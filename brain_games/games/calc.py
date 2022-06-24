@@ -2,7 +2,7 @@ from random import randint
 from random import choice
 
 
-condition = 'What is the result of the expression?'
+CONDITION = 'What is the result of the expression?'
 
 OPERATIONS = ['-', '+', '*']
 
@@ -14,12 +14,12 @@ END = 100
 def question_and_answer():
     a = randint(START, END)
     b = randint(START, END)
-    x = choice(OPERATIONS)
-    expression = f'{a} {x} {b}'
-    if x == '-':
+    operator = choice(OPERATIONS)
+    expression = f'{a} {operator} {b}'
+    if operator == '-':
         right_answer = a - b
-    elif x == '+':
+    elif operator == '+':
         right_answer = a + b
-    elif x == '*':
+    elif operator == '*':
         right_answer = a * b
     return (expression, str(right_answer))
