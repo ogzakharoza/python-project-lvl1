@@ -11,4 +11,4 @@ def question_and_answer():
         right_answer = 'yes'
     else:
         right_answer = 'no'
-    return question, right_answer 
+    return question, right_answer
