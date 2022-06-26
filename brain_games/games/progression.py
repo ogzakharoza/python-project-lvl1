@@ -11,6 +11,7 @@ END_X = 6
 
 NUMBERS_IN_PROGRESSION = 9
 
+
 def question_and_answer():
     progression = []
     start = randint(START_A, END_A)
